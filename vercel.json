@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py", // Ganti dengan nama file Flask utama Anda
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.9" } // Pilih versi Python yang sesuai
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py" // Ganti dengan nama file Flask utama Anda
+    }
+  ]
+}
